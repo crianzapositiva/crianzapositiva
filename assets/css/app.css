@@ -1,0 +1,108 @@
+
+/******************** BASE STYLES ***********************/
+body {
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: ;
+}
+
+p,strong {
+  color: #5c5c5c;
+}
+
+.top-bar {
+  background: #fff;
+}
+
+.top-bar .logo {
+  width: 60px;
+}
+
+.top-bar a {
+  color: #31add5;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+
+.top-bar a span {
+  margin-left: 15px;
+} 
+
+section.wrapper {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+section.wrapper h1 {
+  margin-bottom: 30px;
+  font-size: 20px; 
+}
+
+section.wrapper p {
+  text-align: justify;
+  font-size: 17px; 
+}
+
+section.wrapper .button {
+ background-color: #fe6867;
+}
+
+section#wrapper_1 {
+  background: url("../../images/wrapper_1.jpg");
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 0px; 
+}
+
+section#wrapper_1 h1 {
+  color: #fff;
+  display: block;
+}
+
+section#wrapper_2 {
+  background: url("../../images/wrapper_2.png");
+  background-size: cover;
+}
+
+section#wrapper_2 h1 {
+  color: #31add5;
+  text-align: center;
+}
+
+section#wrapper_3 {
+  background: url("../../images/wrapper_3.jpg");
+  background-size: cover;
+}
+
+section#wrapper_3 h1 {
+  color: #575757;
+}
+
+footer {
+  padding: 50px 50px;
+}
+
+@media only screen and (min-width: 960px) {
+  section.wrapper {
+    padding: 80px 200px;
+  }
+  section.wrapper p {
+    font-size: 20px;
+  }
+  section.wrapper h1{
+    font-size: 40px;
+  }
+  section#wrapper_1 {
+    padding: 100px 200px 0px;
+  }
+  footer {
+    padding: 60px 200px;
+  }
+  }
+}

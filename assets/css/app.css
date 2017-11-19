@@ -14,6 +14,19 @@ p,strong {
   color: #5c5c5c;
 }
 
+body.other p {
+  color: #0a0a0a;
+  font-size: 17px !important;
+}
+
+ol li {
+  margin-bottom: 40px; 
+}
+
+h3  {
+  margin: 60px 0px;
+}
+
 .top-bar {
   background: #fff;
 }
@@ -22,17 +35,37 @@ p,strong {
   width: 60px;
 }
 
+@media only screen and (min-width: 960px) {
+  .top-bar-fixed {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 999;
+  }
+}
+
 .top-bar a {
   color: #31add5;
   padding: 0 20px;
   display: flex;
   align-items: center;
   font-size: 22px;
+  background: #fff;
 }
 
 .top-bar a span {
   margin-left: 15px;
-} 
+  text-transform: capitalize;
+}
+
+.top-bar-right {
+  padding: 20px;
+}
+
+.top-bar-right a {
+  font-size: 14px;
+  text-transform: capitalize;
+}
 
 section.wrapper {
   padding: 50px 50px;
@@ -60,9 +93,35 @@ section#wrapper_1 {
   padding-bottom: 0px; 
 }
 
+section#wrapper_4 {
+  background: url("../../images/wrapper_1.jpg");
+  background-size: cover;
+  text-align: center;
+}
+
+section#wrapper_1.paralax, section#wrapper_2.paralax, section#wrapper_3.paralax  {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section#wrapper_1 h1 {
   color: #fff;
   display: block;
+}
+
+section#wrapper_4 * {
+  color: #fff;
+}
+section#wrapper_4 h1{
+  color: #fff;
+}
+
+@media only screen and (min-width: 960px) {
+  section.wrapper:first-of-type {
+    margin-top: 60px; 
+  }
 }
 
 section#wrapper_2 {
@@ -104,5 +163,5 @@ footer {
   footer {
     padding: 60px 200px;
   }
-  }
 }
+
